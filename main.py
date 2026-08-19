@@ -13,6 +13,10 @@ os.environ.setdefault("ARROW_DEFAULT_MEMORY_POOL", "system")
 
 import streamlit as st
 
+
+import matplotlib.font_manager as fm
+fm._load_fontmanager(try_read_cache=False)
+
 st.set_page_config(page_title="AI 대시보드 데모", page_icon="🤖", layout="wide")
 
 # 사이드바에 '페이지별 컨트롤이 들어올 자리'를 먼저 잡고, 그 아래에 공통 푸터를 둡니다.
